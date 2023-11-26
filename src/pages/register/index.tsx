@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link';
 
 function Register() {
   const [email, setEmail] = useState('')
@@ -59,7 +60,7 @@ function Register() {
               <input style={{marginBottom: '60px', color: 'black', width: '100%',padding: '9px 19px 9px 19px', borderRadius: '10px', display: 'block'}} type="text" id="confirm-password" name="confirm-password" placeholder="Confirm your password.." required></input> */}
               <button onClick={handleRegister} style={{fontWeight: 'bold', borderRadius: '15px', width: '100%', padding: '11px 25px 11px 25px', backgroundColor: '#76B3DD', cursor:'pointer', marginTop: '20px'}}>Register</button>
             {/* </form> */}
-            <p style={{textAlign: 'center', marginTop: '10px'}}>Already have an account? <a href='/login' style={{color: '#76B3DD'}}>Login</a></p>
+            <p style={{textAlign: 'center', marginTop: '10px'}}>Already have an account? <Link href='/login' style={{color: '#76B3DD'}}>Login</Link></p>
             
           </div>
         </div>
