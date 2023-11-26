@@ -23,7 +23,7 @@ const TripHistoryList: React.FC<TripHistoryProps> = ({ flightHistory }) => {
   return (
     <div>
       {flightHistory.map((flight) => (
-        <div>
+        <div key={flight.id}>
           <p className='text-[28px] font-[600] py-[10px]'>{flight.date}</p>
           <li key={flight.id} className='rounded-[20px] bg-[#C2C3CB] flex  mb-[10px]'>
             
