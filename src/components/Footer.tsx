@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <>
         <footer className="relative">
-            <Image src="/footer.png" alt='footer' width={1440} height={467} />
+            <Image src="/footer.png" alt='footer' width={1440} height={467} className="w-[100%]"/>
             {/* <p className="absolute left-[72px] top-[182px] text-sm text-gray-600">{Text}</p> */}
             <div className='absolute left-[72px] top-[162px]'>
                 <Image src="/aerontimelogo.png" alt='logo' width={128} height={42}/>
