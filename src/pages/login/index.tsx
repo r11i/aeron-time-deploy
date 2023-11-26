@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 
 
@@ -139,7 +140,7 @@ function Login() {
               </button>
             {/* </form> */}
             <p style={{ textAlign: 'center', marginTop: '10px' }}>
-              Don't have an account? <a href="/register" style={{ color: '#76B3DD' }}>Sign up</a>
+              Don't have an account? <Link href="/register" style={{ color: '#76B3DD' }}>Sign up</Link>
             </p>
           </div>
         </div>
